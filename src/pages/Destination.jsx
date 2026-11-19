@@ -62,7 +62,7 @@ export default function Destination() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <button className="bg-[#167D8D] hover:bg-opacity-90 text-white px-8 py-3 rounded-full font-semibold text-lg transition flex items-center gap-2">
+            <button className="hidden sm:flex bg-[#167D8D] hover:bg-opacity-90 text-white px-8 py-3 rounded-full font-semibold text-lg transition items-center gap-2">
               <Icon icon="mdi:magnify" /> Cari
             </button>
           </div>
