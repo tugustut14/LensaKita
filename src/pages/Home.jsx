@@ -20,6 +20,7 @@ export default function Home() {
             src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1920&auto=format&fit=crop" 
             alt="Wedding Photography" 
             className="w-full h-full object-cover object-center"
+            onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=400&auto=format&fit=crop'; }}
           />
           {/* Overlay Gelap */}
           <div className="absolute inset-0 bg-black/60"></div>
@@ -70,9 +71,9 @@ export default function Home() {
           
           {/* Gambar Bertumpuk (Disembunyikan di Mobile) */}
           <div className="relative h-[500px] hidden lg:block">
-            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=600&auto=format&fit=crop" alt="Wedding" className="absolute top-10 left-0 w-3/5 h-80 object-cover rounded-lg shadow-xl transform -rotate-3 border-4 border-white" />
-            <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=600&auto=format&fit=crop" alt="Couple" className="absolute top-0 right-0 w-1/2 h-64 object-cover rounded-lg shadow-lg transform rotate-6 z-10" />
-            <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?q=80&w=600&auto=format&fit=crop" alt="Portrait" className="absolute bottom-0 right-10 w-3/5 h-80 object-cover rounded-lg shadow-2xl z-20 border-4 border-white" />
+            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=600&auto=format&fit=crop" alt="Wedding" className="absolute top-10 left-0 w-3/5 h-80 object-cover rounded-lg shadow-xl transform -rotate-3 border-4 border-white" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=400&auto=format&fit=crop'; }} />
+            <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=600&auto=format&fit=crop" alt="Couple" className="absolute top-0 right-0 w-1/2 h-64 object-cover rounded-lg shadow-lg transform rotate-6 z-10" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=400&auto=format&fit=crop'; }} />
+            <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?q=80&w=600&auto=format&fit=crop" alt="Portrait" className="absolute bottom-0 right-10 w-3/5 h-80 object-cover rounded-lg shadow-2xl z-20 border-4 border-white" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=400&auto=format&fit=crop'; }} />
             
             {/* Card Testimoni Melayang */}
             <div className="absolute bottom-16 -left-8 bg-white p-4 rounded-lg shadow-xl z-30 w-64 border border-gray-100">
@@ -136,7 +137,7 @@ export default function Home() {
           ].map((item, idx) => (
             <div key={idx} className="group cursor-pointer">
               <div className="overflow-hidden rounded-md mb-3">
-                <img src={item.img} alt={item.title} className="w-full h-64 object-cover group-hover:scale-105 transition duration-500" />
+                <img src={item.img} alt={item.title} className="w-full h-64 object-cover group-hover:scale-105 transition duration-500" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=400&auto=format&fit=crop'; }} />
               </div>
               <p className="text-center font-medium text-gray-700">{item.title}</p>
             </div>

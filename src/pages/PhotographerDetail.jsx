@@ -23,7 +23,7 @@ export default function PhotographerDetail() {
       {/* HERO */}
       <section className="relative py-24 px-6 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src={p.imageUrl} alt={p.nama} className="w-full h-full object-cover" />
+          <img src={p.imageUrl} alt={p.nama} className="w-full h-full object-cover" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=400&auto=format&fit=crop'; }} />
           <div className="absolute inset-0 bg-black/60"></div>
         </div>
         <div className="relative z-10 max-w-4xl mx-auto text-center text-white">
@@ -53,7 +53,7 @@ export default function PhotographerDetail() {
             <h2 className="font-serif text-2xl font-bold mb-4">Portofolio</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {p.galeri.map((img, i) => (
-                <img key={i} src={img} alt={`Galeri ${i + 1}`} className="w-full h-40 object-cover rounded-lg" />
+                <img key={i} src={img} alt={`Galeri ${i + 1}`} className="w-full h-40 object-cover rounded-lg" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=400&auto=format&fit=crop'; }} />
               ))}
             </div>
           </div>

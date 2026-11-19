@@ -36,7 +36,7 @@ export default function FAQ() {
       {/* 1. HEADER SECTION */}
       <section className="relative py-24 px-6 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1920&auto=format&fit=crop" alt="Hero Background" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1920&auto=format&fit=crop" alt="Hero Background" className="w-full h-full object-cover" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=400&auto=format&fit=crop'; }} />
           <div className="absolute inset-0 bg-black/60"></div>
         </div>
         <div className="relative z-10 max-w-3xl mx-auto text-center text-white">

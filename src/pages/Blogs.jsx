@@ -70,7 +70,7 @@ export default function Blogs() {
       {/* HEADER BLOG */}
       <section className="relative py-24 px-6 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?q=80&w=1920&auto=format&fit=crop" alt="Hero Background" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?q=80&w=1920&auto=format&fit=crop" alt="Hero Background" className="w-full h-full object-cover" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=400&auto=format&fit=crop'; }} />
           <div className="absolute inset-0 bg-black/60"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto text-center text-white">
@@ -104,7 +104,7 @@ export default function Blogs() {
           {activeCategory === 'Semua' && (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-[#B9E4E8]/30 p-6 rounded-2xl border border-[#B9E4E8]">
               <div className="rounded-xl overflow-hidden h-80 lg:h-[400px]">
-                <img src={articles[0].image} alt={articles[0].title} className="w-full h-full object-cover hover:scale-105 transition duration-500" />
+                <img src={articles[0].image} alt={articles[0].title} className="w-full h-full object-cover hover:scale-105 transition duration-500" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=400&auto=format&fit=crop'; }} />
               </div>
               <div>
                 <span className="bg-[#167D8D] text-white text-xs font-bold px-3 py-1 rounded-full mb-4 inline-block">{articles[0].category}</span>
@@ -124,7 +124,7 @@ export default function Blogs() {
             {filteredArticles.filter(a => activeCategory !== 'Semua' || a.id !== 1).map((article) => (
               <div key={article.id} className="group cursor-pointer bg-white rounded-xl overflow-hidden border border-gray-100 hover:shadow-lg transition">
                 <div className="h-60 overflow-hidden">
-                  <img src={article.image} alt={article.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+                  <img src={article.image} alt={article.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=400&auto=format&fit=crop'; }} />
                 </div>
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-3">

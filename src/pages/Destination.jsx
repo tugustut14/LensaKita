@@ -40,6 +40,7 @@ export default function Destination() {
             src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=1920&auto=format&fit=crop" 
             alt="Pemandangan Bali" 
             className="w-full h-full object-cover object-center"
+            onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=400&auto=format&fit=crop'; }}
           />
           <div className="absolute inset-0 bg-black/50"></div>
         </div>
@@ -89,7 +90,7 @@ export default function Destination() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredDestinations.map((dest) => (
               <div key={dest.id} className="group relative rounded-2xl overflow-hidden cursor-pointer h-72 shadow-md hover:shadow-xl transition-all duration-300">
-                <img src={dest.image} alt={dest.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <img src={dest.image} alt={dest.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=400&auto=format&fit=crop'; }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-6 w-full flex justify-between items-end">
                   <div>
@@ -116,7 +117,7 @@ export default function Destination() {
                 className="bg-white rounded-xl shadow-sm border border-[#EEEEEE] overflow-hidden hover:shadow-lg transition-all group cursor-pointer"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img src={photo.imageUrl} alt={photo.nama} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={photo.imageUrl} alt={photo.nama} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=400&auto=format&fit=crop'; }} />
                   <button className="absolute top-3 right-3 bg-white/80 p-2 rounded-full hover:bg-white transition" onClick={(e) => e.stopPropagation()}>
                     <Icon icon="mdi:heart-outline" className="text-xl text-gray-600" />
                   </button>
