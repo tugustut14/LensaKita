@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { Icon } from '@iconify/react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { photographers } from '../data/photographers';
 
 export default function Destination() {
@@ -89,7 +89,7 @@ export default function Destination() {
         {activeTab === 'destinations' && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredDestinations.map((dest) => (
-              <div key={dest.id} className="group relative rounded-2xl overflow-hidden cursor-pointer h-72 shadow-md hover:shadow-xl transition-all duration-300">
+              <Link to={`/destination/${dest.name}`} key={dest.id} className="group relative rounded-2xl overflow-hidden cursor-pointer h-72 shadow-md hover:shadow-xl transition-all duration-300 block">
                 <img src={dest.image} alt={dest.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=400&auto=format&fit=crop'; }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-6 w-full flex justify-between items-end">
@@ -103,7 +103,7 @@ export default function Destination() {
                     <Icon icon="mdi:arrow-right" className="text-white text-xl" />
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         )}
