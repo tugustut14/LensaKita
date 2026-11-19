@@ -20,7 +20,6 @@ export default function Navbar() {
           <Link to="/" className={isActive('/')}>Beranda</Link>
           <Link to="/destination" className={isActive('/destination')}>Destinasi</Link>
           <Link to="/review" className={isActive('/review')}>Ulasan</Link>
-          <Link to="/payments" className={isActive('/payments')}>Pembayaran</Link>
           <Link to="/blogs" className={isActive('/blogs')}>Blog</Link>
           <Link to="/faq" className={isActive('/faq')}>FAQ</Link>
         </div>
