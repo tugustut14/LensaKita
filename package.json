@@ -2,6 +2,7 @@
   "name": "lensakita",
   "private": true,
   "version": "0.0.0",
+  "description": "Platform web direktori interaktif untuk menemukan jasa fotografer profesional.",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,16 +1,37 @@
-# React + Vite
+# LensaKita
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Platform web direktori (katalog) interaktif untuk membantu calon klien menemukan jasa fotografer profesional berdasarkan spesialisasi (Wedding, Produk, Event, Wisuda) dan domisili.
 
-Currently, two official plugins are available:
+## Tech Stack
+- React 19 (Vite)
+- Tailwind CSS v3
+- @iconify/react (ikon SVG)
+- react-router-dom (routing SPA)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Fitur
+- Landing page (Home) dengan hero background gambar, section selang-seling.
+- Halaman Destination: eksplorasi destinasi & fotografer, tabs, filter real-time, klik kartu ke detail.
+- Halaman Detail Fotografer: profil, galeri, paket harga, ulasan, tombol WhatsApp.
+- Halaman Review: testimoni pelanggan dengan filter bintang.
+- Halaman Blogs: magazine fotografi dengan featured post, filter kategori, newsletter.
+- Halaman FAQ: accordion dengan kategori sidebar + CTA kontak.
+- Navbar & Footer global, menu aktif berwarna Teal.
+- Semua gambar menggunakan Unsplash dengan fallback onError.
 
-## React Compiler
+## Menjalankan Secara Lokal
+```bash
+npm install
+npm run dev
+```
+Buka http://localhost:5173
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Build Production
+```bash
+npm run build
+```
 
-## Expanding the Oxlint configuration
+## Deployment
+Deploy ke Vercel. File `vercel.json` sudah disertakan untuk SPA routing (rewrite ke index.html).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Repositori
+https://github.com/tugustut14/LensaKita
