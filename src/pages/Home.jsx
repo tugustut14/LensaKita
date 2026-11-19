@@ -212,53 +212,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 9. FOOTER (Abu-abu Terang) */}
-      <footer className="bg-[#EEEEEE] border-t border-gray-300 pt-16 pb-8">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-          <div>
-            <h4 className="font-bold mb-4 text-[#071B2B]">Informasi</h4>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li><a href="#" className="hover:text-[#167D8D]">Tentang LensaKita</a></li>
-              <li><a href="#" className="hover:text-[#167D8D]">Hubungi Kami</a></li>
-              <li><a href="#" className="hover:text-[#167D8D]">Syarat & Ketentuan</a></li>
-              <li><a href="#" className="hover:text-[#167D8D]">Kebijakan Privasi</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold mb-4 text-[#071B2B]">Jelajahi</h4>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li><a href="#" className="hover:text-[#167D8D]">Destinasi</a></li>
-              <li><a href="#" className="hover:text-[#167D8D]">Harga</a></li>
-              <li><a href="#" className="hover:text-[#167D8D]">Voucher Hadiah</a></li>
-              <li><a href="#" className="hover:text-[#167D8D]">Blog</a></li>
-              <li><a href="#" className="hover:text-[#167D8D]">Gabung Jadi Fotografer</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold mb-4 text-[#071B2B]">Ikuti Kami</h4>
-            <div className="flex gap-4">
-              {['mdi:instagram', 'mdi:pinterest', 'mdi:twitter', 'mdi:youtube'].map((icon, idx) => (
-                <a key={idx} href="#" className="bg-[#167D8D] text-white p-2 rounded-full hover:bg-opacity-90 transition">
-                  <Icon icon={icon} className="text-xl" />
-                </a>
-              ))}
-            </div>
-          </div>
-          <div className="flex flex-col items-center md:items-start">
-            <div className="mb-2">
-              <span className="font-serif font-bold text-2xl text-[#071B2B]">LensaKita</span>
-            </div>
-            <p className="text-xs text-gray-500">2026 © Hak cipta dilindungi, lensakita.com</p>
-          </div>
-        </div>
-      </footer>
-
-      {/* FLOATING WHATSAPP */}
-      <a href="#" className="fixed bottom-8 right-8 bg-[#25D366] text-white px-5 py-3 rounded-full shadow-2xl flex items-center gap-2 font-bold hover:scale-105 transition z-50">
-        <Icon icon="mdi:whatsapp" className="text-2xl" />
-        Chat Admin via WhatsApp
-      </a>
-
     </div>
   );
 }

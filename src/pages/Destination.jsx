@@ -152,14 +152,6 @@ export default function Destination() {
 
       </section>
 
-      {/* FOOTER SEDERHANA */}
-      <footer className="bg-white border-t border-[#EEEEEE] py-8 text-center mt-12">
-        <div className="mb-4">
-          <span className="font-serif font-bold text-2xl text-[#071B2B]">LensaKita</span>
-        </div>
-        <p className="text-sm text-gray-500">2026 © Hak cipta dilindungi, lensakita.com</p>
-      </footer>
-
     </div>
   );
 }
