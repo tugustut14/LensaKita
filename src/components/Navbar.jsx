@@ -15,7 +15,7 @@ export default function Navbar() {
         
         {/* Logo */}
         <Link to="/" className="flex items-center cursor-pointer" onClick={closeMobile}>
-          <span className="font-serif font-bold text-3xl tracking-tight text-[#071B2B]">LensaKita</span>
+          <span className="font-serif font-bold text-2xl sm:text-3xl tracking-tight text-[#071B2B]">LensaKita</span>
         </Link>
 
         {/* Menu Desktop */}

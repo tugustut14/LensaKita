@@ -25,7 +25,7 @@ export default function DestinationDetail() {
 
   return (
     <div className="min-h-screen bg-[#EEEEEE] font-sans text-[#071B2B] pb-20">
-      <section className="relative py-20 px-6 overflow-hidden">
+      <section className="relative py-16 sm:py-20 px-6 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src={`https://source.unsplash.com/random/1920x600/?${city},city,travel`}

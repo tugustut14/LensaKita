@@ -13,7 +13,7 @@ export default function Home() {
     <div className="min-h-screen font-sans text-[#071B2B]">
       
       {/* 1. HERO SECTION (Background Gambar) */}
-      <section className="relative py-24 lg:py-32 px-6 overflow-hidden">
+      <section className="relative py-16 sm:py-24 lg:py-32 px-6 overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -37,7 +37,7 @@ export default function Home() {
             </p>
             
             {/* Search Bar */}
-            <form onSubmit={handleSearch} className="flex bg-white rounded-md shadow-2xl overflow-hidden max-w-lg mb-6">
+            <form onSubmit={handleSearch} className="flex flex-wrap sm:flex-nowrap bg-white rounded-md shadow-2xl overflow-hidden max-w-lg mb-6">
               <div className="flex items-center pl-4 text-gray-400">
                 <Icon icon="mdi:map-marker-outline" className="text-xl" />
               </div>

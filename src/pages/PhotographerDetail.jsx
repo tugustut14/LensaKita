@@ -21,7 +21,7 @@ export default function PhotographerDetail() {
   return (
     <div className="min-h-screen bg-[#EEEEEE] font-sans text-[#071B2B] pb-20">
       {/* HERO */}
-      <section className="relative py-24 px-6 overflow-hidden">
+      <section className="relative py-16 sm:py-24 px-6 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img src={p.imageUrl} alt={p.nama} className="w-full h-full object-cover" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=400&auto=format&fit=crop'; }} />
           <div className="absolute inset-0 bg-black/60"></div>

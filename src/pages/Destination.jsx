@@ -34,7 +34,7 @@ export default function Destination() {
   return (
     <div className="min-h-screen bg-[#EEEEEE] font-sans text-[#071B2B]">
       {/* 2. HEADER PENCARIAN (Hero Section dengan Background Gambar) */}
-      <section className="relative py-24 px-6 overflow-hidden">
+      <section className="relative py-16 sm:py-24 px-6 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=1920&auto=format&fit=crop" 
@@ -51,7 +51,7 @@ export default function Destination() {
           <p className="text-white/90 mb-8 text-lg md:text-xl drop-shadow-md">
             Temukan destinasi impianmu dan temukan fotografer lokal terbaik di sana.
           </p>
-          <div className="flex bg-white rounded-full shadow-2xl overflow-hidden p-2 max-w-2xl mx-auto">
+          <div className="flex flex-wrap sm:flex-nowrap bg-white rounded-full shadow-2xl overflow-hidden p-2 max-w-2xl mx-auto">
             <div className="flex items-center pl-4 text-gray-400">
               <Icon icon="mdi:map-marker-outline" className="text-2xl" />
             </div>
@@ -71,7 +71,7 @@ export default function Destination() {
 
       {/* 3. KONTEN UTAMA */}
       <section className="max-w-7xl mx-auto px-6 py-12">
-        <div className="flex gap-4 mb-8 border-b border-gray-300 pb-2">
+        <div className="flex flex-wrap gap-4 mb-8 border-b border-gray-300 pb-2">
           <button 
             onClick={() => setActiveTab('destinations')}
             className={`pb-2 px-4 font-semibold text-lg transition-colors ${activeTab === 'destinations' ? 'text-[#167D8D] border-b-4 border-[#167D8D]' : 'text-gray-500 hover:text-[#167D8D]'}`}

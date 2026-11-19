@@ -23,7 +23,7 @@ export default function Review() {
     <div className="min-h-screen bg-[#EEEEEE] font-sans text-[#071B2B] pb-20">
       
       {/* 1. HERO SECTION (Background Gambar) */}
-      <section className="relative py-24 px-6 overflow-hidden">
+      <section className="relative py-16 sm:py-24 px-6 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1920&auto=format&fit=crop" alt="Hero Background" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/60"></div>
