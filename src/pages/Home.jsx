@@ -37,8 +37,8 @@ export default function Home() {
             </p>
             
             {/* Search Bar */}
-            <form onSubmit={handleSearch} className="flex flex-wrap sm:flex-nowrap bg-white rounded-md shadow-2xl overflow-hidden max-w-lg mb-6">
-              <div className="flex items-center pl-4 text-gray-400">
+            <form onSubmit={handleSearch} className="flex w-full max-w-lg bg-white rounded-md shadow-2xl overflow-hidden mb-6">
+              <div className="flex items-center pl-4 text-gray-400 shrink-0">
                 <Icon icon="mdi:map-marker-outline" className="text-xl" />
               </div>
               <input
@@ -46,9 +46,9 @@ export default function Home() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Anda traveling ke mana? misal: Bali"
-                className="flex-grow p-4 outline-none text-gray-700 placeholder-gray-400"
+                className="flex-1 min-w-0 p-4 outline-none text-gray-700 placeholder-gray-400"
               />
-              <button type="submit" className="bg-[#167D8D] hover:bg-opacity-90 text-white px-4 sm:px-8 font-semibold flex items-center gap-2 transition">
+              <button type="submit" className="bg-[#167D8D] hover:bg-opacity-90 text-white px-4 sm:px-8 font-semibold flex items-center gap-2 transition shrink-0">
                 <span className="hidden sm:inline">Cari Fotografer</span>
                 <Icon icon="mdi:magnify" className="text-lg" />
               </button>

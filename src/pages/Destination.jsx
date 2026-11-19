@@ -51,14 +51,14 @@ export default function Destination() {
           <p className="text-white/90 mb-8 text-lg md:text-xl drop-shadow-md">
             Temukan destinasi impianmu dan temukan fotografer lokal terbaik di sana.
           </p>
-          <div className="flex flex-wrap sm:flex-nowrap bg-white rounded-full shadow-2xl overflow-hidden p-2 max-w-2xl mx-auto">
+          <div className="flex w-full max-w-2xl bg-white rounded-full shadow-2xl overflow-hidden p-2 mx-auto">
             <div className="flex items-center pl-4 text-gray-400">
               <Icon icon="mdi:map-marker-outline" className="text-2xl" />
             </div>
             <input 
               type="text" 
               placeholder="Ketik nama kota atau destinasi (misal: Bali)..." 
-              className="flex-grow p-3 outline-none text-gray-700 placeholder-gray-400 text-lg bg-transparent"
+              className="flex-1 min-w-0 p-3 outline-none text-gray-700 placeholder-gray-400 text-lg bg-transparent"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
