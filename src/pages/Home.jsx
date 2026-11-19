@@ -48,8 +48,9 @@ export default function Home() {
                 placeholder="Anda traveling ke mana? misal: Bali"
                 className="flex-grow p-4 outline-none text-gray-700 placeholder-gray-400"
               />
-              <button type="submit" className="bg-[#167D8D] hover:bg-opacity-90 text-white px-8 font-semibold flex items-center gap-2 transition">
-                Cari Fotografer <Icon icon="mdi:magnify" className="text-lg" />
+              <button type="submit" className="bg-[#167D8D] hover:bg-opacity-90 text-white px-4 sm:px-8 font-semibold flex items-center gap-2 transition">
+                <span className="hidden sm:inline">Cari Fotografer</span>
+                <Icon icon="mdi:magnify" className="text-lg" />
               </button>
             </form>
             
