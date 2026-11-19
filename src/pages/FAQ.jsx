@@ -117,9 +117,9 @@ export default function FAQ() {
               <button className="bg-white text-[#167D8D] px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition shadow-sm flex items-center justify-center gap-2">
                 <Icon icon="mdi:email-outline" className="text-xl" /> Kirim Email
               </button>
-              <button className="bg-[#25D366] text-white px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition shadow-sm flex items-center justify-center gap-2">
+              <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20butuh%20bantuan" target="_blank" rel="noopener noreferrer" className="bg-[#25D366] text-white px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition shadow-sm flex items-center justify-center gap-2">
                 <Icon icon="mdi:whatsapp" className="text-xl" /> Chat WhatsApp
-              </button>
+              </a>
             </div>
           </div>
           {/* Ornamen Background */}

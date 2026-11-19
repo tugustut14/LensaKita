@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Icon } from '@iconify/react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
+  const [searchQuery, setSearchQuery] = useState('');
+  const navigate = useNavigate();
+  const handleSearch = (e) => {
+    e.preventDefault();
+    navigate(`/destination?q=${encodeURIComponent(searchQuery.trim())}`);
+  };
   return (
     <div className="min-h-screen font-sans text-[#071B2B]">
       
@@ -29,15 +36,21 @@ export default function Home() {
             </p>
             
             {/* Search Bar */}
-            <div className="flex bg-white rounded-md shadow-2xl overflow-hidden max-w-lg mb-6">
+            <form onSubmit={handleSearch} className="flex bg-white rounded-md shadow-2xl overflow-hidden max-w-lg mb-6">
               <div className="flex items-center pl-4 text-gray-400">
                 <Icon icon="mdi:map-marker-outline" className="text-xl" />
               </div>
-              <input type="text" placeholder="Anda traveling ke mana? misal: Bali" className="flex-grow p-4 outline-none text-gray-700 placeholder-gray-400" />
-              <button className="bg-[#167D8D] hover:bg-opacity-90 text-white px-8 font-semibold flex items-center gap-2 transition">
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Anda traveling ke mana? misal: Bali"
+                className="flex-grow p-4 outline-none text-gray-700 placeholder-gray-400"
+              />
+              <button type="submit" className="bg-[#167D8D] hover:bg-opacity-90 text-white px-8 font-semibold flex items-center gap-2 transition">
                 Cari Fotografer <Icon icon="mdi:magnify" className="text-lg" />
               </button>
-            </div>
+            </form>
             
             {/* Social Proof */}
             <div className="flex items-center gap-6 text-sm font-medium text-white">
