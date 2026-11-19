@@ -19,6 +19,11 @@
 ## Milestone 3: Halaman Destination ✅
 - Hero background Bali + overlay, search bar membulat.
 - Tabs Destinasi/Fotografer, grid kartu, "Muat Lebih Banyak".
+- Kartu destinasi kini `Link` ke `/destination/:city`.
+
+## Milestone 3b: Halaman DestinationDetail ✅
+- Hero background kota + overlay.
+- Daftar fotografer per kota, sorting, empty state, tombol kembali.
 
 ## Milestone 4: Halaman Review ✅
 - Hero background kamera, rating overall, filter bintang, grid ulasan, avatar inisial.

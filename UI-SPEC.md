@@ -31,6 +31,7 @@ LensaKita memakai gaya bersih dan modern. Foto fotografer dari Unsplash adalah b
 ## 4. Hero Section (implementasi saat ini)
 - Home: background gambar wedding Unsplash + overlay `bg-black/60`; teks putih dengan drop-shadow; search bar putih; social proof.
 - Destination: background gambar Bali + overlay `bg-black/50`; search bar membulat besar.
+- DestinationDetail: background gambar kota (Unsplash random) + overlay `bg-black/60`; judul "Fotografer Terbaik di {city}".
 - Review: background gambar kamera + overlay `bg-black/60`; rating overall.
 - Blogs: background gambar lensa + overlay `bg-black/60`.
 - FAQ: background gambar diskusi + overlay `bg-black/60`.

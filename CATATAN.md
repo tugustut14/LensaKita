@@ -23,6 +23,7 @@ Aturan: setiap iterasi menghasilkan komponen fungsional, modular, bebas technica
 **Halaman yang sudah dibangun:**
 - `Home` (`/`): landing page — hero background gambar, features, stats, occasions, why, testimonials, CTA banner, FAQ.
 - `Destination` (`/destination`): eksplorasi destinasi & fotografer (hero background Bali, tabs, grid kartu).
+- `DestinationDetail` (`/destination/:city`): daftar fotografer per kota (hero background, sorting, empty state).
 - `Review` (`/review`): testimoni pelanggan dengan filter bintang.
 - `Blogs` (`/blogs`): magazine fotografi (featured post, filter kategori, newsletter).
 - `FAQ` (`/faq`): accordion dengan kategori sidebar + CTA kontak.

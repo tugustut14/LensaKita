@@ -20,6 +20,7 @@ Catatan: fitur katalog lengkap, favorit (localStorage), modal detail, dashboard 
 ### 3.1 Routing
 - `/` → `Home`
 - `/destination` → `Destination`
+- `/destination/:city` → `DestinationDetail`
 - `/review` → `Review`
 - `/blogs` → `Blogs`
 - `/faq` → `FAQ`
